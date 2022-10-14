@@ -1,0 +1,283 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</head>
+<!-- <style>
+    .flx{
+        display: flex;
+        height: 500px;
+        width: 60%;
+        border: solid 1px green;
+        flex-direction: row;
+        /* justify-content: space-evenly; */
+        flex-wrap: wrap;
+
+    }
+    .d001{
+        background-color: aqua;
+        border: solid 1px black;
+        height: 100px;
+        flex-grow: 3;
+        order:2;
+    }
+    .d002{
+        background-color: azure;
+        border: solid 1px black;
+        height: 100px;
+        flex-grow: 1;
+        order:1;
+    }
+    .d003{
+        background-color: antiquewhite;
+        border: solid 1px black;
+        height: 100px;
+        flex-grow: 1;
+    }
+
+</style> -->
+
+<style>
+    .btn{
+        display: block;
+    }
+</style>
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown bg-success">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li><li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown 2
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+    <!-- <button class="btn btn-dark">click</button> <br>
+    <button class="btn btn-info">click</button><br>
+    <button class="btn btn-primary">click</button> <br>
+    <button class="btn btn-secondary">click</button> <br>
+    <button class="btn btn-danger">click</button> <br>
+    <button class="btn btn-success">click</button> <br>
+    <button class="btn btn-warning">click</button> <br>
+    <button class="btn btn-light">click</button> <br>
+
+    <table class="table table-primary table-striped table-hover">
+        <thead>
+          <tr class="table-dark">
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table> -->
+      <div style="height: 500px; width: 100%; background-color: aliceblue;" class="text-center">
+        <!-- <img src="{% static 'images/motivation2.jpeg' %}" alt="" class="rounded float-start" height="300px" > -->
+        <img src="{% static 'images/motivation2.jpeg' %}" alt="" class="rounded " height="300px" > <br><br><br>
+
+        <button class="btn btn-dark mx-auto position-relative"> notification <span class="badge text-bg-danger position-absolute start-100 top-0 translate-middle">5</span></button>
+        <button class="btn btn-success mx-auto position relative">online <span class=" position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+            <span class="visually-hidden"></span>
+        </span></button>
+
+
+
+      </div>
+      <!-- <img src="{% static 'images/motivation2.jpeg' %}" alt="" class="rounded  " height="300px" > <button class="btn btn-dark"> notification <span class="badge text-bg-danger">5</span></button> -->
+      
+        <div class="card" style="width: 25rem;">
+        <img src="{% static 'images/motivation2.jpeg' %}" alt="" class="rounded " height="300px" >
+        <div class="card-body">
+            <h5 class="card-title">Card </h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, odit?</p>
+            <a href="#" class="btn btn-secondary">Go somewhere</a>
+
+        </div>
+
+      </div>
+
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+
+        </ul>
+
+      </nav>
+
+   <hr><br><br>
+   <div class="spinner-border " role="status">
+    <span class="visually-hidden">loading..</span>
+   </div>   <br><br>  
+   
+   <hr>
+   <div class="spinner-border text-primary" role="status">
+    <span class="visually-hidden">loading..</span>
+   </div> 
+   <div class="spinner-border text-secondary" role="status">
+    <span class="visually-hidden">loading..</span>
+   </div> 
+   <div class="spinner-border text-danger" role="status">
+    <span class="visually-hidden">loading..</span>
+   </div> 
+   <div class="spinner-border text-success" role="status">
+    <span class="visually-hidden">loading..</span>
+   </div> 
+   <div class="spinner-border text-light" role="status">
+    <span class="visually-hidden">loading..</span>
+   </div> 
+   <div class="spinner-border text-warning" role="status">
+    <span class="visually-hidden">loading..</span>
+   </div> 
+   <div class="spinner-border text-dark" role="status">
+    <span class="visually-hidden">loading..</span>
+   </div> 
+
+   <hr><br><br><br>
+   <h1 class="display-1">rrrrrrrrrrr</h1>
+   <h1 class="display-2">rrrrrrrrrrr</h1>
+   <h1 class="display-3">rrrrrrrrrrrr</h1>
+   <h1 class="display-4">rrrrrrrrr</h1>
+   <h1 class="display-5">rrrrrrrrrr</h1>
+   <h1 class="display-6">rrrrrrrrrrr</h1>
+
+   <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, nihil?</p>
+
+   <hr><br><br>
+
+   <p> Lorem ipsum dolor sit amet consectetur <mark>hsbdhsdfh</mark> adipisicing elit. Quia, modi.</p>
+   <p> <del>Lorem ipsum dolor sit amet consectetur adipisicing elit.</del></p>
+   <p> <s>Lorem ipsum dolor sit amet consectetur adipisicing elit.</s></p>
+   <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+   <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+   <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+<hr><br><br>
+
+<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="toast-header">
+    <img src="..." class="rounded me-2" alt="...">
+    <strong class="me-auto">Bootstrap</strong>
+    <small>11 mins ago</small>
+    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+  <div class="toast-body">
+    Hello, world! This is a toast message.
+  </div>
+</div>
+
+
+
+
+<button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="..." class="rounded me-2" alt="...">
+      <strong class="me-auto">Bootstrap</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Hello, world! This is a toast message.
+    </div>
+  </div>
+</div>
+
+<div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+</div><br>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Basic example" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div> <br>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped bg-success" role="progressbar" aria-label="Basic example" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"> 50%</div>
+</div> <br>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+
+<hr><br><br>
+
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown button
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+</div> <br><br>
+
+<button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+<button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+<button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+</body>
+</html>

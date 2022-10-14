@@ -1,0 +1,30 @@
+#bo{
+    background-color: aquamarine;
+    /* height: 200px;
+    width: 400px; */
+    /* position: absolute; */
+    /* right: 0;
+    bottom: 0; */
+    /* position: relative;
+    left: 400px;
+    top: 50px; */
+    border-radius: 50px;
+    border: 2px solid black;
+
+    /* position: fixed; */
+}
+/* .ani{
+    width: 200px;
+    height: 100px;
+    background-color: aqua;
+    position: relative;
+    animation: move 5s 4;
+    animation-direction: alternate;
+}
+@keyframes move{
+    0%   {background-color: aqua;left: 100px;top: 100px;}
+    25%  {background-color: blueviolet; left: 300px; top: 0px;}
+    50%  {background-color: chartreuse; left: 600px; top: 200px;}
+    75%  {background-color: brown; left: 300px; top: 300px;}
+    100% {background-color: aqua;left: 100px;top: 100px;}
+} */

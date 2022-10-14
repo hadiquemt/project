@@ -1,0 +1,72 @@
+.div0{
+    background-color: #fd1849;
+    height: 240px;
+    width: 75%;
+    position: absolute;
+    left: 180px;
+    top: 555px;
+    border-radius: 10px;
+}
+.po{
+    color: white;
+    padding-left: 40px;
+    padding-top: 0px;
+    display: inline;
+    position: absolute;
+    left: 230px;
+    top: 55px;
+    
+}
+.h10{
+    color: white;
+    display: inline;
+    position: absolute;
+    left: 270px;
+    top: 85px;
+}
+.btn{
+    border: 0;
+    border-radius: 30px;
+    height: 50px;
+    width: 250px;
+    position: absolute;
+    left: 800px;
+    top: 140px;
+    background-color: #263B5E;
+    color: white;
+    font-size: 18px;
+}
+.btn:hover{
+    color: #263B5E;
+    background-color: #fd1849;
+    transition: 0.3s;
+}
+.btn2{
+    background-color: #fd1849;
+    color: white;
+    border-radius: 10px;
+    height: 50px; 
+    width: 150px; 
+    border: 0;
+}
+.btn2:hover{
+    background-color: #445167;
+    transition: 0.3s;
+}
+#doo{
+    background-color: rgb(160, 138, 109);
+    height: 250px;
+    width: 100%;
+    position: absolute;
+    left: 180px;
+    top: 555px;
+}
+.img2{
+    padding-left: 100px;
+    padding-top: 100px;
+}
+/* .divend{
+    height: 100px;
+    width: 100%;
+    background-color: white;
+} */

@@ -1,0 +1,30 @@
+.span{
+    color: blue;
+    background-color: bisque;
+    font-style: oblique;
+    font-weight: 300;
+    font-size: large;
+}
+h2{
+    color: rgb(17, 255, 0);
+    background-color: aquamarine;
+}
+#div1{
+    color: violet;
+    align-items: center;
+    padding-left: 150px;
+    border: 1px double blue;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(63, 86, 86);
+
+}
+input{
+    color: blueviolet;
+
+}
+/* #div1,#vedhu{
+    color: rgb(30, 35, 101);
+    background-color: aqua;
+    padding-left: 100px;
+} */

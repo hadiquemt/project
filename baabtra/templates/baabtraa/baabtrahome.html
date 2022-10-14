@@ -1,0 +1,149 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/baabtrahome.css' %}"> 
+
+    <style>
+        body {
+          font-family: Verdana, sans-serif;
+        }
+        </style>
+
+</head>
+<body style="margin: 0;padding: 0px;">
+    <div style="height: 80px; background-color: #263B5E; width: 40%; float: left;border-bottom: 1px solid grey; " >
+        <img src="{% static 'images/logo baabtra.png' %}" alt="" width="200px" height="65px" style="padding-left: 160px;    max-width: 100%;
+        height: auto;">
+    </div>
+        
+        <div style="width: 60%; background-color: #263B5E; height: 80px;  float: left; border-bottom: 1px solid grey; ">
+            <br>
+        <a href="" style="color:white ; font-size: 1em ; text-decoration: none; padding: 15px;padding-top: 50px; padding-bottom: 10px;" >Programs</a>
+        <a href="" style="color:white ; font-size: 1em ; text-decoration: none; padding: 15px;">Placements</a>
+        <a href="{% url 'aboutus' %}" style="color:white ; font-size: 1em ; text-decoration: none;padding: 15px; ">About as</a>
+        <a href="" style="color:white ; font-size: 1em ; text-decoration: none; padding: 15px;">Blog</a>
+        <a href="" style="color:white ; font-size: 1em ; text-decoration: none; padding: 15px;">Gallery</a>
+        <button class="btn2" >Enquiry Now</button>
+        </div>
+        
+    
+    <div style="background-color: #263B5E; height: 600px; margin-bottom: 0px; float: left;width: 50%;">
+
+        {%  block content  %}
+
+
+
+        {% endblock %} 
+
+
+        <p style="color: rgb(231, 229, 229); padding-top: 50px; padding-left: 160px;"><small>LEARN SOFTWARE</small></p>
+        <h1 style="color: white; padding-top: 0px; padding-left: 160px;  font-family:comic sans ms;"><big>Getting a Software <br> Job is So Easy Now</big></big></big></h1>
+        <p style="color: white; padding-top: 0px; padding-left: 160px; color: rgb(233, 230, 230); font-family:comic sans ms;">Learn programming from Kerala's most trusted software  training company with the highest placement record.  Enroll in software courses and internship programs in  Python, Flutter, Angular and PHP to start your career.</big></p>
+        <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <button class="btn2" >Our Courses</button>
+    </div>
+    <div class="div0">
+        <img src="{% static 'images/Oray-logo.png' %}" alt="" height="120px" width="120px" style="padding-left: 80px; padding-top: 48px;">
+        <p class="po">WE ARE AFFILIATED WITH</p>
+        <h1 class="h10">Oray Education London, UK</h1>
+        <button class="btn">Download Brochure</button>
+
+    </div>
+
+    <div style="width: 50%;float: left;background-color: #263B5E; height: 600px;">
+        <img src="{% static 'images/programming.png' %}" alt="" height="auto" width="500px" style="padding-top: 10px; padding-left: 100px;">
+    
+     
+    </div>
+
+    <div style="width: 100%;float: left;background-color: white; height: 600px;">
+
+        <p style="align-items: center; color: #fd1849;padding-top: 150px;padding-left: 650px; font-size: 0.5cm;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+        <small>EXPERTISE IN EDUCATION</small></p> 
+        <p style="align-items: center; color: #263B5E;padding-top: 20px; text-decoration: 5px solid;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" align="center">
+        <big><big> <b> Ed-tech company with 11 years of industry leadership in training and <br> placements, holding highest number of placement track in Malabar.</big></big></big></big></b></p>
+        <br>
+    </div>
+
+    <div id="doo">
+
+    </div>
+
+    <div style="width: 50%;float: left;background-color: white; height: 600px;">
+        <img src="{% static 'images/explore-course.png' %}" alt="" height="auto" width="500px" style="padding-left: 130px; padding-top: 100px;">
+
+    </div>
+    
+    <div style="width: 50%;float: left;background-color: white; height: 600px;">
+        <p style="padding-left: 0px; padding-top: 50px; color:  #263B5E;"><small>EXPLORE OUR INTERNSHIP PROGRAMME</small></p>
+        <h2 style="padding-left: 0px; padding-top: 0px; color:  #263B5E;">Learn new skills to go ahead of <br> your career</h2>
+        <p style="padding-left: 0px; padding-top: 0px; color:  #fd1849;">Join Us</p>
+        <p style="padding-left: px; padding-top: 0px; color:  #263B5E;"><small><small>It doesn’t matter how talented you are. Join specialized job oriented software <br> courses & training programs and just learn the in-demand skills to be a better <br> programmer.</small></small></p>
+        <p style="padding-left: 0px; padding-top: 0px; color:  #fd1849;">Get Skilled for Job</p>
+        <p style="padding-left: 0px; padding-top: 0px; color:  #263B5E;"> <small><small>Get trained and skilled under the guidance of expert software engineers and <br> be ready for the jobs.</small></small></p>
+        <p style="padding-left: 0px; padding-top: 0px; color:  #fd1849;">Get Hired</p>
+        <p style="padding-left: 0px; padding-top: 0px; color:  #263B5E;"><small><small> Showcase your profile with skills acquired and get hired by your dream <br> company.</small></small></p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button style="background-color: #fd1849; color: white;border-radius: 10px;height: 50px; width: 150px; border: 0;">know more</button>
+    </div>
+
+
+
+
+    <!-- <div style="height: 390px;background-color: rgb(18, 18, 18); width: 100%;"> -->
+        <div style="float: left;color: white;background-color: black; width: 40%; height: 300px; text-align: center;">
+            <p style="color: white;" align="center">About us</p>
+            <hr width="65%" style="color: white;">
+            <p style="color: #fd1849;"> <small> Baabtra, the best software training company in <br> Calicut has proved its expertise by training and <br> placing several hundreds of students both in <br> MNC’s like UST Global, Infosys, Oracle etc and <br> SME’s like Nucore Software Solutions, Sesame, <br> IOSS, ULTS.  </small></p>
+        </div>
+        <div style=" float: left;background-color: black; width: 15%;height: 300px;" >
+            <p style="color: white;" align="center">COMPANY</p>
+            <hr width="65%" style="color: white;">
+             
+            <small><p style="color: grey;">About us</p></small> 
+            <small><p style="color: grey;">Placements</p></small> 
+            <small><p style="color: grey;">Testimonials</p></small> 
+            <small><p style="color: grey;">Gallery</p></small> 
+            <small><p style="color: grey;">Contact us</p></small> 
+            
+    
+        </div>
+        <div style="float: left; color: white; background-color: black;height: 300px; width: 15%; text-align: center;" >
+           <p align="center"> COURSES</p> 
+           <hr width="65%" style="color: white;"> 
+    
+    <small><p style="color: grey;">Python</p></small> 
+     
+    <small><p style="color: grey;">Flutter</p></small> 
+    
+    <small><p style="color: grey;">Angular</p></small> 
+    <small><p style="color: grey;">PHP</p></small>
+        </div>
+    
+        <div style="float: left; color: white; background-color: black;height: 300px;width: 20%; padding-left: 50px; padding-right: 67px;" >
+            <p align="center">Contact</p>
+            <hr width="65%" style="color: white;">
+            
+                <a href="products.html" style="text-decoration: none; color: red;"> <small> +91 859 205 8444</small>  <br> <br></a>
+                <a href="porfolio.html" style="text-decoration: none; color: red;">info@baabtra.com <br><br></a>
+                
+                <a href="porfolio.html" style="text-decoration: none; color: red;"> <small> CAFIT Square, 5th Floor, <br> HiLite Business Park, <br> Thondayad Bye-Pass, Hilite City, <br> Calicut, Kerala, India. </small> <br><br></a>
+    
+            
+        </div>
+
+<!--     
+    </div> -->
+
+    <div style="height: 100px; width: 100%;">
+
+    </div>
+ 
