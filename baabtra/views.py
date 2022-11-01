@@ -51,5 +51,32 @@ def baabtra_newhome(request):
     return render(request,'baabtraa/babtrahomenew.html')
 
 
+def chegg(request):
+    return render(request,'baabtraa/chegg.html')
+
+
+def javascript(request):
+    return render(request,'baabtraa/javascript.html')
+
+
+def while1(request):
+    return render(request,'baabtraa/while.html')
+
+
+def document(request):
+    return render(request,'baabtraa/document.html')
+
+
+def operator(request):
+    return render(request,'baabtraa/operators.html')
+
+
+def array(request):
+    return render(request,'baabtraa/array.html')
+    
+def todo(request):
+    return render(request,'baabtraa/to do.html')
+
+
 
     

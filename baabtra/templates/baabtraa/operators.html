@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operators</title>
+</head>
+<body style="background-color:rgb(204, 204, 204);">
+    <h1   align="center">operators</h1>
+    <label for="">first number</label>
+    <input type="number" id="num1" placeholder="enter the first number"> <br><br>
+    <label for="">second number</label>
+    <input type="number" id="num2" placeholder="enter the second number"> <br><br>
+    <label for="">select operation</label>
+    <select name="" id="operators" >
+        <option value="+">addition</option>
+        <option value="-">subtraction</option>
+        <option value="/">division</option>
+        <option value="*">multiplication</option>
+      
+    </select> <br><br>  
+    <button id="btn" >Click</button> <br> <br>
+    <span id="rslt"> result</span> <br><br>
+    <!-- <label for="">result</label>
+    <input type="text" id="rslt"> <br><br> -->
+    <!-- <button onclick="addition()" style="color: #fd1849; background-color: aqua; border-radius: 10px; height: 30px; width: 90px;">addition</button>
+    <button onclick="subtraction()" style="color: white; background-color: rgb(69, 156, 127); border-radius: 10px; height: 30px; width: 90px;">subtraction</button>
+    <button onclick="multiplication()" style="color: white; background-color: #fd1849; border-radius: 10px; height: 30px; width: 120px;">multiplication</button>
+    <button onclick="division()" style="color: black; background-color: gold; border-radius: 10px; height: 30px; width: 90px;">division</button>
+ -->
+ 
+    <script>
+
+        document.getElementById('operators').addEventListener('change', ()=>{
+
+            var num1 = Number(document.getElementById('num1').value)
+            var num2 = Number(document.getElementById('num2').value)
+            var op =  document.getElementById('operators').value
+
+            var result = 0
+
+            switch(op){
+                case '+':result = num1 + num2
+                         break
+                case '-':result = num1 - num2            
+                         break
+                case '/':result = num1 / num2
+                         break
+                case '*':result = num1 * num2
+                         break
+                
+            }
+
+            document.getElementById('rslt').innerHTML ='result is ' + result
+            document.getElementById('rslt').style.background='yellow'
+        })
+
+       
+
+    </script>
+</body>
+</html>

@@ -14,5 +14,11 @@ urlpatterns=[
     path('homenew',views.homenew,name='homenew'),
     path('bootstrapgrid',views.bootstrpgrd,name='bootstrapgrid'),
     path('baabtranew',views.baabtra_newhome,name='baabtranewhome'),
-
+    path('chegg',views.chegg,name='chegg'),
+    path('javascript',views.javascript,name='javascript'),
+    path('while1',views.while1,name='while1'),
+    path('doc',views.document,name='doc'),
+    path('operator',views.operator,name='ope'),
+    path('array',views.array,name='array'),
+    path('todo',views.todo,name='todo'),
 ]

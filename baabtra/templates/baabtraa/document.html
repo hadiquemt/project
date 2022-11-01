@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+
+<body>
+    <label for=""> first number  </label>
+    <input type="number" placeholder="enter a number"  id="num1"> <br> <br>
+    <label for=""> second number</label> 
+    <input type="number" placeholder="enter a number"  id="num2"> <br><br>
+    <button onclick="addition()">ADD</button> <br>
+    <span id="reslt"> result </span>
+    <!-- <h1 id="h1">hellooo</h1>
+    <button style="color: blue;" onclick="h1tag()">click me</button> -->
+    <script>
+        // function h1tag(){
+        //     document.getElementById('h1').innerHTML = 'haaii'
+        //     document.getElementById('h1').style.color = 'green'
+        //     document.getElementById('h1').style.background = 'yellow'
+        // }
+        // num1 = Number(prompt('enter the number'))
+        // num2 = Number(prompt('enter the number'))
+
+        function addition(){
+            var a = Number(document.getElementById('num1').value) 
+            var b = Number(document.getElementById('num2').value) 
+            var result = a + b
+            document.getElementById('reslt').innerHTML = result
+            if(result<=50){
+                document.getElementById('reslt').style.color = 'green'
+                document.getElementById('reslt').style.background = 'yellow'
+            }
+            else{
+                document.getElementById('reslt').style.color = 'red'
+                document.getElementById('reslt').style.background = 'blue'
+            }
+
+        }
+    </script>
+
+</body>
+</html>

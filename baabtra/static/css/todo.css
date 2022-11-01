@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(180, 236, 236);
+}
+.task{
+    padding-left: 100px;
+}
+.des{
+    padding-left: 100px;
+}
+.submit{
+    padding-left: 100px;
+    margin-left: 100px;
+}
+.main_div{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: brown;
+    padding-left: 300px;
+}
+.tbl{
+    border: 2px;
+}
+
+textarea{
+    vertical-align: middle;
+}
