@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test_images</title>
+    <link rel="stylesheet" href="{% static 'css/test_css.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img class="logo_img" src="{% static 'images/camera3.png' %}" alt="" >
+        </div>
+        <div class="menu">
+ 
+        <a href="{% url 'test_css' %}" class="menu_font">home</a>
+        <a href="{% url 'test_images' %}" class="menu_font">images</a>
+        <a href="{% url 'test_about' %}" class="menu_font">about</a>
+ 
+        </div>
+     </div>
+
+     <div class="body_gallery">
+
+        <div class="grid_container">
+            <div class="grid_item"><img class="grid_img" src="{% static 'images/guitar2.png' %}" alt=""></div>
+            <div class="grid_item"><img class="grid_img" src="{% static 'images/scenery.jfif' %}" alt=""></div>
+            <div class="grid_item"><img class="grid_img" src="{% static 'images/scenery2.jfif' %}" alt=""></div>
+            <div class="grid_item"><img class="grid_img" src="{% static 'images/guitar2.png' %}" alt=""></div>
+            <div class="grid_item"><img class="grid_img" src="{% static 'images/IMG_20210710_220104_402.jpg' %}" alt=""></div>
+            <div class="grid_item"><img class="grid_img" src="{% static 'images/guitar2.png' %}" alt=""></div>
+            <div class="grid_item"><img class="grid_img" src="{% static 'images/guitar2.png' %}" alt=""></div>
+            <div class="grid_item"><img class="grid_img" src="{% static 'images/guitar2.png' %}" alt=""></div>
+            <div class="grid_item"><img class="grid_img" src="{% static 'images/guitar2.png' %}" alt=""></div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

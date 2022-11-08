@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test css</title>
+    <link rel="stylesheet" href="{% static 'css/test_css.css' %}"> 
+</head>
+<body>
+    <div class="container">
+       <div class="logo">
+           <img class="logo_img" src="{% static 'images/camera3.png' %}" alt="" >
+       </div>
+       <div class="menu">
+
+       <a href="{% url 'test_css' %}" class="menu_font">home</a>
+       <a href="{% url 'test_images' %}" class="menu_font">images</a>
+       <a href="{% url 'test_about' %}" class="menu_font">about</a>
+
+       </div>
+    </div>
+
+    <div class="body_gallery">
+        <h1 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Times, serif; padding-left: 200px; padding-top: 100px;">IMAGE GALLERY</h1>
+        <div class="avatar_font">
+            <img class="avatar" src="{% static 'images/avatar.jpg' %}" alt="" height="300px" width="350px">
+        <p class="about_font">Fashion photographer Chris von Wangenheim is one of the most avant-garde image-makers in the 20th century. He ranked next to Helmut Newton and Guy Bourdin in his encapsulation of the 1970s zeitgeist.
+
+            In his relatively short career (between the years 1968 and 1981) he produced now-iconic imagery for every top fashion publication of the 70’s, including Vogue, Harper’s Bazaar and Interview. He also created unforgettable campaigns for Valentino, Dior, Calvin Klein, and Revlon.
+            
+            At the peak of his success, Chris passed away in a car accident in 1981 at the age 39, leaving behind a great legacy, which remained archived for 40 years. On September 15, 2015, Rizzoli published a book Gloss: The Work of Chris von Wangenheim by Roger Padilha and Mauricio Padilha. This book contains over two hundred provocative and iconic images including never-before-seen outtakes from memorable shoots with such supermodels as Christie Brinkley, Lisa Taylor, and the late Gia Carangi.</p>
+        </div>
+            <br><br>    
+        <p class="font2">
+            “I realized that getting my picture <br>
+was more important to me than the discomfort of someone, <br>
+not understanding or someone’s opposition to my goals.” <br> <br>
+— CHRIS VON WANGENHEIM
+        </p>
+    </div>
+
+    <div class="footer">
+
+    </div>
+    
+    
+</body>
+</html>

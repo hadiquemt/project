@@ -21,4 +21,13 @@ urlpatterns=[
     path('operator',views.operator,name='ope'),
     path('array',views.array,name='array'),
     path('todo',views.todo,name='todo'),
+    path('qury',views.jquery,name='query'),
+    path('j_add',views.jadd,name='jadd'),
+    path('jqury2',views.jquery2,name='jqury2'),
+    path('traverse',views.traverse,name='traverse'),
+    path('jquerysignup',views.j_query_signup,name='jquerysignup'),
+    path('test_css',views.test_css,name='test_css'),
+    path('test_images',views.test_images,name='test_images'),
+    path('test_about',views.test_about,name='test_about'),
+
 ]

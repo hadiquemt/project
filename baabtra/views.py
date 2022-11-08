@@ -77,6 +77,39 @@ def array(request):
 def todo(request):
     return render(request,'baabtraa/to do.html')
 
+def jquery(request):
+    return render(request,'baabtraa/jquery.html')
+
+
+def jadd(request):
+    return render(request,'baabtraa/queryadd.html')
+
+
+def jquery2(request):
+    return render(request,'baabtraa/jquery2.html')
+
+
+def traverse(request):
+    return render(request,'baabtraa/traverse.html')
+
+
+def j_query_signup(request):
+    return render(request,'baabtraa/j_query_signup.html')
+
+
+def jquery_signup2(request):
+    return render(request,'baabtraa/signup_jquery2.html')
+    
+    
+def test_css(request):
+    return render(request,'baabtraa/test_css.html')
+
+
+def test_images(request):
+    return render(request,'baabtraa/test_images.html')
+
+def test_about(request):
+    return render(request,'baabtraa/test_aboutus.html')
 
 
     

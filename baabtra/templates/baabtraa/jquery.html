@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>query</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <button id="btn">click</button>
+    <p id="p_tag" style="position: absolute; color: blue;background-color: bisque; padding-left: 250px; height: 100px;font-size: 25px;width: 400px; font-family: Georgia, 'Times New Roman', Times, serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, nisi?</p>
+    <script>
+        $(document).ready(function(){
+            // var a = $('#p_tag').html()
+            // console.log(a)
+            $('#btn').click(function(){
+                $('#p_tag').animate({
+                    // 'height':'500px'
+                    'left':'500px'
+
+                },1000).delay(1000)
+                .animate({
+                    'top':'500px'
+                },1000).delay(1000)
+                .animate({
+                    'left':'0px'
+
+                },1000).delay(1000)
+                .animate({
+                    'top':'0px'
+                },1000)
+                
+            })
+
+        })
+    </script>
+    
+</body>
+</html>

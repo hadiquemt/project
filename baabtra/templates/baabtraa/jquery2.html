@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <style>
+        .ul{
+            color: blue;
+        }
+        .div1{
+            background-color: aqua;
+            height: 500px;
+            width: 500px;
+            padding: 20px;
+            border: 2px solid black;
+        }
+        
+    </style>
+</head>
+<body>
+    <button id="btn">click</button> <br>
+    <div class="div1">
+
+    </div>
+
+    <ul>
+        <li>rrr</li>
+        <li>ttttt</li>
+        <li>ggggggg</li>
+        <li>bbbbbb</li>
+        <li>weeee</li>
+    </ul>
+    <script>
+        $(document).ready(function(){
+            $('#btn').click(function(){
+                // $('#div1').remove()
+                // $('ul').addClass('ul')
+                var height = $('.div1').height()
+                console.log('height is '+height)
+
+                var width = $('.div1').width()
+                console.log('width is '+width)
+
+                var innerWidth = $('.div1').innerWidth()
+                console.log('inner width is '+innerWidth)
+
+                var innerHeight = $('.div1').innerHeight()
+                console.log('inner height is '+innerHeight)
+
+                var outerWidth = $('.div1').outerWidth()
+                console.log('outer width is '+outerWidth)
+
+                var outerHeight = $('.div1').outerHeight()
+                console.log('outer height is '+outerHeight)
+
+
+            })
+
+
+        })
+    </script>
+</body>
+</html>

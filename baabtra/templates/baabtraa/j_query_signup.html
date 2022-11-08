@@ -1,0 +1,123 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="{% static 'css/signup_jquery.css' %}"> 
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <h1 class="name" align="center">Sign Up</h1>
+
+    <div class="signup" align="center"> <br>
+    <form action="" id="sigupForm" class="form"> 
+
+
+        <input type="text" name="fullName" class="inputbox" placeholder="   Full Name"> <span id="name_span"></span> <br> <br> 
+
+        <input type="number" name="age" class="inputbox" placeholder="   Age">  <br> <br>
+
+        <input type="number" name="mobile_no" class="inputbox" maxlength="10" placeholder="   Mobile number"> <br> <br>
+
+        <input type="password" name="psswrd" class="inputbox" placeholder="   Password"> <br> <br>
+
+        <label for="" class="labelName">Gender</label> <br> <br>
+        <input type="radio" name="gender">
+        <span style="font-size: 15px; font-family: Arial, Helvetica, sans-serif;">Male</span>
+        <input type="radio" name="gender">
+        <span style="font-size: 15px; font-family: Arial, Helvetica, sans-serif;">Female</span>
+        <input type="radio" name="gender">
+        <span style="font-size: 15px; font-family: Arial, Helvetica, sans-serif;">Custom</span> <br> <br>
+
+        <label for="" class="labelName">Qualification</label>
+        <select name="" id="" >
+            <option value="" disabled selected>choose</option>
+            <option value="">sslc</option>
+            <option value="">+2</option>
+            <option value="">Degree</option>
+            <option value="">higher studies</option>
+        </select> <br> <br> <br><br> <br>  <br>
+
+        <button onclick="validate_login()" class="btn" >Sign Up</button>
+
+    </form>
+
+    </div>
+
+    <script>
+        // function validate_login(){
+        //     var status = 1
+        //     var username = document.getElementById('name')
+        //     var password = document.getElementById('psswrd')
+
+        //     if(username.value == ""){
+        //         // username.style.borderColor = 'red'
+        //         // status = 0
+        //         // username.style.display='block'
+        //         // username.style.color='red'
+        //         // alert('name cannot be blank')
+        //           // username.style.borderColor='red'
+        //           // document.getElementById('name_span').innerHTML='Enter the name!'
+        //           // status = 0
+        //         window.alert("Name is required")  
+        //         username.focus()
+        //         return false
+        //     }
+        //     else {
+        //         // username.style.borderColor='#ced4da'
+        //         // username.style.display='none'
+        //         // status = 1
+        //         document.getElementById('name_span').innerHTML=''
+        //         status=true
+
+        //     }
+        //     if(password.value.length <5){
+        //         alert('Password must be at least 5 char long')
+        //         return false
+        //     }
+            
+        // }
+
+        $(document).ready(function () {
+            $('#signupForm').validate({
+                rules:{
+                    fullName:"required",
+
+                    age:"required",
+
+                    mobile_no:{
+                        required:true,
+                        minlength:10,
+                    },
+                    
+                    psswrd:{
+                        required:true,
+                        minlength:5,
+                    },
+                },
+                messages:{
+                    fullName:"enter your name",
+                    age:"enter your age",
+                    mobile_no:{
+                        required:"enter your mobile number",
+                        minlength:"Your number must consist of at least 10 characters"
+                    },
+                    psswrd:{
+                        required:"enter your password",
+                        minlength:"Your password must consist of at least 5 characters"
+                    },
+                }
+            })
+
+        })
+
+
+
+    </script>
+    
+</body>
+</html>

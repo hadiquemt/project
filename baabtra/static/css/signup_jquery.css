@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(221, 221, 221);
+}
+.signup{
+    background-color: white;
+    height: 600px;
+    width: 400px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px 5px rgb(189, 189, 189);
+}
+.name{
+    font-weight: bolder;
+    font-size: 50px;
+    color: rgb(2, 134, 130);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.labelName{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.inputbox{
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    width: 350px;
+}
+.btn{
+    background-color: rgb(2, 122, 118);
+     color: white;
+     height: 40px;
+     width: 250px;
+     border: none;
+     border-radius: 50px;
+     box-shadow: 5px 5px 5px rgb(189, 189, 189);
+     
+}
+.btn:hover {background-color: #4fae52}
+
